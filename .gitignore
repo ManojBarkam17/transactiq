@@ -1,0 +1,33 @@
+# Environment secrets - NEVER commit
+.env
+*.env
+
+# Java / Maven
+target/
+*.class
+*.jar
+*.war
+*.ear
+.mvn/
+mvnw
+mvnw.cmd
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# Node / React
+node_modules/
+dist/
+build/
+.npm
+*.log
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+.DS_Store
+
+# Docker
+docker-compose.override.yml
