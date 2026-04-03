@@ -2,7 +2,19 @@
 
 > Turn raw bank transactions into natural-language spending intelligence — powered by Claude AI, Spring Boot, and React.
 
-![TransactIQ Dashboard](https://placehold.co/1200x600/0f0f1a/6366f1?text=TransactIQ+Dashboard+Screenshot)
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-GitHub_Pages-6366f1?style=for-the-badge)](https://ManojBarkam17.github.io/transactiq/)
+[![GitHub](https://img.shields.io/badge/GitHub-ManojBarkam17-black?style=for-the-badge&logo=github)](https://github.com/ManojBarkam17/transactiq)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/manoj-b-bittu/)
+
+![TransactIQ Dashboard](https://placehold.co/1200x600/0f0f1a/6366f1?text=TransactIQ+%E2%80%94+AI+Transaction+Insights+Dashboard)
+
+---
+
+## 🎯 Live Demo
+
+👉 **[Try it now → ManojBarkam17.github.io/transactiq](https://ManojBarkam17.github.io/transactiq/)**
+
+No login required. Fully interactive with 180 mock transactions and AI-simulated insights.
 
 ---
 
@@ -20,14 +32,14 @@
 
 ## 🛠️ Tech Stack
 
-| Layer      | Technology                          |
-|------------|--------------------------------------|
-| Frontend   | React 18, Vite, Recharts             |
-| Backend    | Spring Boot 3, Spring Data JPA       |
-| Database   | PostgreSQL 15                        |
-| AI         | Anthropic Claude API (`claude-opus-4-6`) |
-| DevOps     | Docker, Docker Compose, Nginx        |
-| Security   | Spring Security, JWT                 |
+| Layer      | Technology                               |
+|------------|-------------------------------------------|
+| Frontend   | React 18, Vite, Recharts                  |
+| Backend    | Spring Boot 3, Spring Data JPA            |
+| Database   | PostgreSQL 15                             |
+| AI         | Anthropic Claude API (`claude-opus-4-6`)  |
+| DevOps     | Docker, Docker Compose, Nginx, GitHub Actions |
+| Security   | Spring Security, JWT                      |
 
 ---
 
@@ -40,7 +52,7 @@
 ### 1. Clone & configure
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/transactiq.git
+git clone https://github.com/ManojBarkam17/transactiq.git
 cd transactiq
 
 # Copy and fill in your API key
@@ -65,7 +77,6 @@ docker-compose up --build
 **Backend:**
 ```bash
 cd backend
-# Set env vars first (see .env.example)
 ./mvnw spring-boot:run
 ```
 
@@ -123,14 +134,17 @@ return callClaudeApi(prompt); // → "📈 Spending Spike: Your Week 4..."
 
 ```
 transactiq/
-├── frontend/                  # React + Vite app
+├── .github/
+│   └── workflows/
+│       └── deploy.yml             # GitHub Pages auto-deploy
+├── frontend/                      # React + Vite app (live demo)
 │   ├── src/
-│   │   ├── App.jsx            # Main dashboard component
-│   │   └── main.jsx           # React entry point
+│   │   ├── App.jsx                # Main dashboard component
+│   │   └── main.jsx               # React entry point
 │   ├── Dockerfile
 │   ├── nginx.conf
 │   └── package.json
-├── backend/                   # Spring Boot app
+├── backend/                       # Spring Boot app
 │   └── src/main/java/com/transactiq/
 │       ├── TransactIqApplication.java
 │       ├── controller/
@@ -150,14 +164,20 @@ transactiq/
 
 ---
 
-## 🌐 Deployment (AWS Free Tier)
+## 🌐 Deployment
+
+### Live Demo (GitHub Pages — Frontend)
+Automatically deployed via GitHub Actions on every push to `main`.
+Visit: **https://ManojBarkam17.github.io/transactiq/**
+
+### Full Stack (AWS Free Tier)
 
 ```bash
 # Build and push to Docker Hub
-docker build -t yourusername/transactiq-backend ./backend
-docker build -t yourusername/transactiq-frontend ./frontend
-docker push yourusername/transactiq-backend
-docker push yourusername/transactiq-frontend
+docker build -t manojbarkam17/transactiq-backend ./backend
+docker build -t manojbarkam17/transactiq-frontend ./frontend
+docker push manojbarkam17/transactiq-backend
+docker push manojbarkam17/transactiq-frontend
 
 # On EC2 (t2.micro)
 docker-compose pull && docker-compose up -d
@@ -167,7 +187,7 @@ docker-compose pull && docker-compose up -d
 
 ## 🤝 Contributing
 
-Pull requests are welcome! For major changes, please open an issue first.
+Pull requests are welcome!
 
 1. Fork the repo
 2. Create your branch: `git checkout -b feature/your-feature`
@@ -185,9 +205,11 @@ MIT License — see [LICENSE](LICENSE) file.
 
 ## 👤 Author
 
-Built with ❤️ and fintech domain expertise from experience at **Mastercard**.
+**Manoj B** — Java Full Stack Developer | AWS Certified | Mastercard
+
+Built with fintech domain expertise from experience at **Mastercard**. Passionate about AI-powered financial tools that make data accessible.
 
 > *"The best finance tools don't just show you data — they tell you what it means."*
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://linkedin.com/in/YOUR_PROFILE)
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-black?logo=github)](https://github.com/YOUR_USERNAME)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://www.linkedin.com/in/manoj-b-bittu/)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-black?logo=github)](https://github.com/ManojBarkam17)

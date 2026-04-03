@@ -28,7 +28,7 @@ This project helped me bridge two worlds I care about: **enterprise-grade fintec
 
 I'm currently open to new opportunities in **fintech, payments, or AI product engineering** — if you're building in this space, I'd love to connect.
 
-🔗 GitHub: https://github.com/YOUR_USERNAME/transactiq
+🔗 GitHub: https://github.com/bittu1719/transactiq
 
 What feature would you want to see next — fraud detection, budget forecasting, or investment recommendations?
 
@@ -53,7 +53,7 @@ Stack: React + Spring Boot + PostgreSQL + Anthropic API
 
 Currently open to roles in fintech/payments/AI. Let's connect!
 
-🔗 https://github.com/YOUR_USERNAME/transactiq
+🔗 https://github.com/bittu1719/transactiq
 
 #OpenToWork #Fintech #AI #React #Java
 
